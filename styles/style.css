@@ -1,1 +1,256 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 95px 50px;
+    font-size: 18px;
+}
+
+.header_logo {
+    height: 105px;
+    width: 148px;
+}
+
+.logo_link {
+    text-align: center;
+}
+
+.header_nav_list {
+    display: flex;
+    gap: 32px;
+    list-style: circle;
+    font-size: 18px;
+}
+
+.header_nav_link:first-child a {
+    text-decoration: none;
+}
+
+.header_nav_link:first-child {
+    list-style: none;
+}
+
+.header_address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 240px;
+    justify-self: end;
+    font-size: 18px;
+}
+
+.cover {
+    position: relative;
+    background: url("/images/cover.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 757px;
+    padding: 140px 50px 50px 50px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    inset: 0;
+    padding: inherit;
+}
+
+.cover_title {
+    font-size: 100px;
+    letter-spacing: 30%;
+}
+
+.cover_title_span {
+}
+
+.cover_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    padding-top: 120px;
+}
+
+.cover_description_text {
+    font-size: 22px;
+    word-spacing: 80%;
+}
+
+.cover_description_button {
+    background-color: transparent;
+    border: 1px solid white;
+    height: 51px;
+    width: 256px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.cover_title_span {
+    display: block;
+    margin-top: 20px;
+}
+
+.cover_title_span:nth-child(2) {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.cover_title_span:last-child {
+    text-align: end;
+    margin-right: -30px;
+}
+
+.lots {
+    margin-top: 180px;
+}
+
+.lots_title {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 40px;
+}
+
+.card_text {
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.lots_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 24px;
+}
+
+.lots_card {
+    color: white;
+    min-height: 596px;
+    width: 334px;
+    padding: 48px 40px;
+    position: relative;
+    background-size: cover;
+}
+
+.lots_card:first-child {
+    background: url("/images/card-lot-01.jpg") no-repeat center center;
+}
+.lots_card:last-child {
+    background: url("/images/card-lot-03.jpg") no-repeat center center;
+}
+.lots_card:nth-child(2) {
+    background: url("/images/card-lot-02.jpg") no-repeat center center;
+}
+
+.card_description {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.lots_card .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lots_see_more_link {
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+.about {
+    margin-top: 120px;
+    display: flex;
+    padding: 35px 24px;
+}
+
+.about_cont:first-child {
+    min-width: 360px;
+}
+.about_bg {
+    background-color: black;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    margin-left: 47px;
+}
+
+.about_image {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about_cont:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 450px;
+    width: 680px;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about_text_span {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.about_title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.footer {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 50px 80px 50px;
+}
+
+.footer_address {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 265px;
+    justify-self: end;
+    font-size: 18px;
+}
+
+.footer_nav_link {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_nav_link:first-child a {
+    text-decoration: none;
+}
+
+.footer_links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+.footer_link_image {
+    width: 48px;
+    height: 48px;
+}
