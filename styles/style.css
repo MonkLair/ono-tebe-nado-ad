@@ -108,7 +108,7 @@
 .lots_title {
     text-transform: uppercase;
     font-size: 40px;
-    padding-left: 40px;
+    padding-left: 55px;
 }
 
 .card_text {
@@ -158,7 +158,7 @@
 
 .lots_see_more_link {
     font-size: 20px;
-    padding-left: 40px;
+    padding-left: 55px;
 }
 
 .about {
@@ -201,6 +201,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.about_cont:last-child {
+    margin-top: 100px;
 }
 
 .about_text_span {
